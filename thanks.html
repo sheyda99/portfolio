@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="title" content="Sheyda Sultanova">
+    <meta name="description" content="Personal Front-end Developer Portfolio. hello, I'm Sheyda Sultanova. I'm a front-end developer.">
+    <meta name="keywords" content="Sheyda, Sultanova, Sheyda Sultanova, Portfolio, Front-end Developer, Front-end Developer Portfolio">
+    <meta name="author" content="Sheyda Sultanova">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/icon.png" type="image/x-icon">
+    <title>Thanks you! | Sheyda Sultanova</title>
+    <script src="https://kit.fontawesome.com/f9a01ea1da.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <style>
+        main {
+            height: 100vh;
+            background-color: #f2f3f8;
+            color: #383b5e;
+        }
+    </style>
+</head>
+<body>
+    <main class="d-flex flex-column align-items-center justify-content-center">
+        <div class="text-center my-5">
+            <p class="display-3 mb-4">Thank you for getting in touch!</p>
+            <i class="fas fa-check" style="font-size: 100px;"></i>
+            <p class="mt-5">I appreciate you contacting me. I will get back in touch with you soon! Have a great day!</p>
+            <p class="fw-bold">Redirecting in <span id="counter">5</span> seconds ...</p>
+        </div>
+    </main>
+
+    <script>
+        setInterval(function() {
+            var counter = document.querySelector("#counter");
+            var count = counter.textContent*1 - 1;
+            counter.textContent = count;
+            if (count <= 0) {
+                window.location.replace("index.html");
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
